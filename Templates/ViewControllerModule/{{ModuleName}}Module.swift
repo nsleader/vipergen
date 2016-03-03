@@ -45,6 +45,7 @@ class {{ModuleName}}Module: NSObject {
         let interactor = {{ModuleName}}Interactor()
         router.view = view
         view.output = presenter
+        view.router = router
         presenter.view = view
         presenter.router = router
         presenter.interactor = interactor

@@ -10,4 +10,6 @@ class {{ModuleName}}Interactor: {{ModuleName}}InteractorInput {
     
     weak var output: {{ModuleName}}InteractorOutput!
     
+    // MARK: - {{ModuleName}}InteractorInput
+    
 }
