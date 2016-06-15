@@ -6,10 +6,12 @@
 
 import Foundation
 
-class {{ModuleName}}Interactor: {{ModuleName}}InteractorInput {
+extension {{ModuleName}}Interactor: {{ModuleName}}InteractorInput {
+	
+}
+
+class {{ModuleName}}Interactor {
     
     weak var output: {{ModuleName}}InteractorOutput!
-    
-    // MARK: - {{ModuleName}}InteractorInput
     
 }

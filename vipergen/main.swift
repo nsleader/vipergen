@@ -7,13 +7,33 @@
 //
 
 import Foundation
+import AppKit
 
 func printHelp() {
-    print("ViperGen version 0.1\n")
-    print("Creating the module: vipergen <moduleName> [<moduleType>]")
-    print("     moduleName - The module name (the word `Module` is automatically added to the end)")
-    print("     moduleType - The module type. Optional. Default `ViewController`")
-    print("     Example: vipergen CreateOrder\n")
+    print(ANSIColors.green + "ViperGen version 0.2\n")
+    
+    print(ANSIColors.udef + "Usage:\n")
+    print(ANSIColors.def + "     $", ANSIColors.green + "vipergen <ModuleName> [<ModuleType>]\n")
+    print("         ", ANSIColors.green + "ModuleName", ANSIColors.def + "- module name (`Module` is automatically added to the end)")
+    print("         ", ANSIColors.green + "ModuleType", ANSIColors.def + "- module type. Optional. Default `ViewController`")
+    print("\n")
+    print(ANSIColors.udef + "Example:\n")
+    print(ANSIColors.def + "     $", ANSIColors.green + "vipergen Auth\n")
+    print(ANSIColors.udef + "Structure of the module:\n")
+    print(ANSIColors.def + "AuthModule/")
+    print("├── AuthModule.swift")
+    print("├── Interactor:")
+    print("│   ├── AuthInteractor.swift")
+    print("│   ├── AuthInteractorInput.swift")
+    print("│   └── AuthInteractorOutput.swift")
+    print("├── Presenter")
+    print("│   └── AuthPresenter.swift")
+    print("├── Router")
+    print("│   └── AuthRouter.swift")
+    print("└── View")
+    print("    ├── AuthViewController.swift")
+    print("    └── AuthViewController.xib")
+    print(ANSIColors.def + "")
 }
 
 if Process.arguments.count < 2 {
@@ -40,12 +60,14 @@ let moduleDirectoryName = moduleType == nil ? "ViewControllerModule" : "\(module
 let moduleDirectoryPath = viperDirectoryPath.stringByAppendingString("/\(moduleDirectoryName)")
 
 if !manager.fileExistsAtPath(viperDirectoryPath) {
-    print("Error!\n`~/.viper` directory does not exist.")
+    print(ANSIColors.red + "Error: `~/.viper` directory does not exist!")
+    print(ANSIColors.def + "")
     exit(0)
 }
 
 if !manager.fileExistsAtPath(moduleDirectoryPath) {
-    print("Error!\n`~/.viper/\(moduleDirectoryName)` directory not exist.")
+    print(ANSIColors.red + "Error: `~/.viper/\(moduleDirectoryName)` directory not exist!")
+    print(ANSIColors.def + "")
     exit(0)
 }
 
@@ -54,7 +76,8 @@ let copyPath = currentDirectoryPath.stringByAppendingString("/\(moduleName)Modul
 if !manager.fileExistsAtPath(copyPath) {
     try! manager.copyItemAtPath(moduleDirectoryPath, toPath: copyPath)
 } else {
-    print("Error!\nThe module with `\(moduleName)Module` name already exists in the current directory.")
+    print(ANSIColors.red + "Error: the module with `\(moduleName)Module` name already exists in the current directory!")
+    print(ANSIColors.def + "")
     exit(0)
 }
 
@@ -79,4 +102,6 @@ while let element = enumerator?.nextObject() as? NSURL {
     }
 }
 
-print("Module '\(moduleName)' created in the current directory.")
+print(ANSIColors.green + "Module '\(moduleName)' created in the current directory.")
+print(ANSIColors.def + "")
+NSWorkspace.sharedWorkspace().openFile(".", withApplication: "Finder")
