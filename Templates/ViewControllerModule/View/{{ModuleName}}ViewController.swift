@@ -18,7 +18,7 @@ protocol {{ModuleName}}ViewOutput: class {
     
 }
 
-class {{ModuleName}}ViewController: UIViewController, {{ModuleName}}ViewInput {
+class {{ModuleName}}ViewController: UIViewController {
 
     var output: {{ModuleName}}ViewOutput!
     var router: {{ModuleName}}Router!
@@ -27,13 +27,17 @@ class {{ModuleName}}ViewController: UIViewController, {{ModuleName}}ViewInput {
         super.viewDidLoad()
         output.setupView()
     }
-
-    // MARK: - {{ModuleName}}ViewInput
     
+}
+
+extension {{ModuleName}}ViewController: {{ModuleName}}ViewInput {
+
     func setupView() {
+
     }
     
     func updateView() {
+        
     }
-    
+   
 }

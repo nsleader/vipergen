@@ -5,22 +5,26 @@
 
 import Foundation
 
-class {{ModuleName}}Presenter: {{ModuleName}}ViewOutput, {{ModuleName}}InteractorOutput {
-    
-    weak var view: {{ModuleName}}ViewInput!
-    var router: {{ModuleName}}Router!
-    var interactor: {{ModuleName}}InteractorInput!
-    
-    // MARK: - {{ModuleName}}ViewOutput
+extension {{ModuleName}}Presenter: {{ModuleName}}ViewOutput {
     
     func setupView() {
         
     }
-    
-    // MARK: - {{ModuleName}}InteractorOutput
+
+}
+
+extension {{ModuleName}}Presenter: {{ModuleName}}InteractorOutput {
     
     func errorReceived(message: String) {
-        router.presentError(message)
+        router.presentError(title: "Error", message: message)
     }
+
+}
+
+class {{ModuleName}}Presenter {
+    
+    weak var view: {{ModuleName}}ViewInput!
+    var router: {{ModuleName}}Router!
+    var interactor: {{ModuleName}}InteractorInput!
     
 }
