@@ -8,7 +8,7 @@ import Foundation
 extension {{ModuleName}}Presenter: {{ModuleName}}ViewOutput {
     
     func setupView() {
-        
+        view.setupView()
     }
 
 }
