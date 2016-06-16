@@ -19,6 +19,7 @@ import UIKit
 class {{ModuleName}}Module: NSObject {
     
     private var viewController: {{ModuleName}}ViewController?
+    {{#withOutputHandler}}private var outputHandler: {{ModuleName}}ModuleOutput{{/withOutputHandler}}
     
     /**
      Вью модуля. Если вью не создан (не используется storyboard/xib), создает и конфигурирует модуль.
@@ -33,14 +34,18 @@ class {{ModuleName}}Module: NSObject {
         }
         return view
     }
-    
+    {{#withOutputHandler}}
+    init(outputHandler: {{ModuleName}}ModuleOutput) {
+        self.outputHandler = outputHandler
+    }
+    {{/withOutputHandler}}
     /**
      Устанавливает зависимости модуля.
      
      - parameter view: Вью модуля.
      */
     private func configureModule(view: {{ModuleName}}ViewController) {
-        let presenter = {{ModuleName}}Presenter()
+        {{#withOutputHandler}}let presenter = {{ModuleName}}Presenter(outputHandler: outputHandler){{/withOutputHandler}}{{^withOutputHandler}}let presenter = {{ModuleName}}Presenter(){{/withOutputHandler}}
         let router = {{ModuleName}}Router()
         let interactor = {{ModuleName}}Interactor()
         router.view = view

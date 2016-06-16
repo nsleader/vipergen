@@ -10,7 +10,7 @@ import Foundation
 import AppKit
 
 func printHelp() {
-    print(ANSIColors.green + "ViperGen version 0.2\n")
+    print(ANSIColors.green + "ViperGen version 0.3\n")
     
     print(ANSIColors.udef + "Usage:\n")
     print(ANSIColors.def + "     $", ANSIColors.green + "vipergen <ModuleName> [<ModuleType>] [--withOutputHandler]\n")
@@ -113,6 +113,11 @@ let enumerator = manager.enumeratorAtURL(NSURL(fileURLWithPath: copyPath, isDire
     return true
 })
 
+let data = [
+    "ModuleName" : moduleName,
+    "withOutputHandler" : withOutputHandler
+]
+
 while let element = enumerator?.nextObject() as? NSURL {
 
     var fileName: AnyObject?
@@ -127,11 +132,15 @@ while let element = enumerator?.nextObject() as? NSURL {
                 let newPath = element.path?.stringByReplacingOccurrencesOfString("{{ModuleName}}", withString: moduleName)
                 try manager.moveItemAtPath(element.path!, toPath: newPath!)
                 
-                let content = try! String(contentsOfFile: newPath!, encoding: NSUTF8StringEncoding)
-                let newContent = content.stringByReplacingOccurrencesOfString("{{ModuleName}}", withString: moduleName)
-                try newContent.writeToFile(newPath!, atomically: false, encoding: NSUTF8StringEncoding)
+                let template = try Template(path: newPath!)
+                let result = try template.render(Box(data))
+                try result.writeToFile(newPath!, atomically: false, encoding: NSUTF8StringEncoding)
+                
             } catch let error as NSError {
                 printError(error.localizedDescription)
+                exit(0)
+            } catch let error as MustacheError {
+                printError(error.message ?? "Error code: \(error.kind.rawValue)")
                 exit(0)
             }
         }
