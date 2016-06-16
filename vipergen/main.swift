@@ -83,16 +83,22 @@ let manager = NSFileManager.defaultManager()
 let homeDirectoryPath = NSHomeDirectory()
 let currentDirectoryPath = manager.currentDirectoryPath
 let viperDirectoryPath = homeDirectoryPath.stringByAppendingString("/.viper")
+let templatesDirectoryPath = viperDirectoryPath.stringByAppendingString("/Templates")
 let moduleDirectoryName = moduleType == nil ? "ViewControllerModule" : "\(moduleType!)Module"
-let moduleDirectoryPath = viperDirectoryPath.stringByAppendingString("/\(moduleDirectoryName)")
+let moduleDirectoryPath = templatesDirectoryPath.stringByAppendingString("/\(moduleDirectoryName)")
 
 if !manager.fileExistsAtPath(viperDirectoryPath) {
     printError("Error: `~/.viper` directory does not exist!")
     exit(0)
 }
 
+if !manager.fileExistsAtPath(templatesDirectoryPath) {
+    printError("Error: `~/.viper/Templates` directory does not exist!")
+    exit(0)
+}
+
 if !manager.fileExistsAtPath(moduleDirectoryPath) {
-    printError("Error: `~/.viper/\(moduleDirectoryName)` directory (template) not exist!")
+    printError("Error: `~/.viper/Templates/\(moduleDirectoryName)` directory (template) not exist!")
     exit(0)
 }
 
