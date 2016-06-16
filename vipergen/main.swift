@@ -13,9 +13,10 @@ func printHelp() {
     print(ANSIColors.green + "ViperGen version 0.2\n")
     
     print(ANSIColors.udef + "Usage:\n")
-    print(ANSIColors.def + "     $", ANSIColors.green + "vipergen <ModuleName> [<ModuleType>]\n")
+    print(ANSIColors.def + "     $", ANSIColors.green + "vipergen <ModuleName> [<ModuleType>] [--withOutputHandler]\n")
     print("         ", ANSIColors.green + "ModuleName", ANSIColors.def + "- module name (`Module` is automatically added to the end)")
     print("         ", ANSIColors.green + "ModuleType", ANSIColors.def + "- module type. Optional. Default `ViewController`")
+    print("         ", ANSIColors.green + "--withOutputHandler -O", ANSIColors.def + "- add a protocol `ModuleOutput`")
     print("\n")
     print(ANSIColors.udef + "Example:\n")
     print(ANSIColors.def + "     $", ANSIColors.green + "vipergen Auth\n")
