@@ -1,0 +1,3 @@
+[submodule "vipergen/3rd/Mustache"]
+	path = vipergen/3rd/Mustache
+	url = https://github.com/groue/GRMustache.swift.git

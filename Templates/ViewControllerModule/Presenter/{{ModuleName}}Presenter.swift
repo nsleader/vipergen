@@ -26,5 +26,12 @@ class {{ModuleName}}Presenter {
     weak var view: {{ModuleName}}ViewInput!
     var router: {{ModuleName}}Router!
     var interactor: {{ModuleName}}InteractorInput!
+    {{#withOutputHandler}}
+    private weak var outputHandler: {{ModuleName}}ModuleOutput?
+    
+    init(outputHandler: {{ModuleName}}ModuleOutput) {
+        self.outputHandler = outputHandler
+    }
+    {{/withOutputHandler}}
     
 }
