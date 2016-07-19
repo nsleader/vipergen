@@ -1,8 +1,6 @@
 //
 //  {{ModuleName}}Interactor.swift
 //
-//  Copyright © 2015 IVAN CHIRKOV. All rights reserved.
-//
 
 import Foundation
 

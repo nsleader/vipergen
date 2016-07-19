@@ -1,8 +1,6 @@
 //
 //  {{ModuleName}}Module.swift
 //
-//  Copyright © 2015 IVAN CHIRKOV. All rights reserved.
-//
 
 import UIKit
 

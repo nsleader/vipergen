@@ -1,8 +1,6 @@
 //
 //  {{ModuleName}}ModuleOutput.swift
 //
-//  All rights reserved.
-//
 
 
 import Foundation

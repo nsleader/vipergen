@@ -1,6 +1,5 @@
 //
 //  {{ModuleName}}Presenter.swift
-//  Copyright © 2015 IVAN CHIRKOV. All rights reserved.
 //
 
 import Foundation
@@ -15,8 +14,8 @@ extension {{ModuleName}}Presenter: {{ModuleName}}ViewOutput {
 
 extension {{ModuleName}}Presenter: {{ModuleName}}InteractorOutput {
     
-    func errorReceived(message: String) {
-        router.presentError(title: "Error", message: message)
+    func errorReceived(error: NSError) {
+        router.presentMessage(title: "Error", message: message)
     }
 
 }
