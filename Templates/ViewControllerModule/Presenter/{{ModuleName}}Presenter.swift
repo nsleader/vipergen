@@ -15,7 +15,7 @@ extension {{ModuleName}}Presenter: {{ModuleName}}ViewOutput {
 extension {{ModuleName}}Presenter: {{ModuleName}}InteractorOutput {
     
     func errorReceived(error: NSError) {
-        router.presentMessage(title: "Error", message: message)
+        router.presentMessage(title: "Error", message: error.localizedDescription)
     }
 
 }
