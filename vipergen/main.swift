@@ -10,7 +10,7 @@ import Foundation
 import AppKit
 
 func printHelp() {
-    print(ANSIColors.green + "ViperGen version 0.3\n")
+    print(ANSIColors.green + "ViperGen version 0.3.1\n")
     
     print(ANSIColors.udef + "Usage:\n")
     print(ANSIColors.def + "     $", ANSIColors.green + "vipergen <ModuleName> [<ModuleType>] [--withOutputHandler]\n")
@@ -83,6 +83,7 @@ let manager = NSFileManager.defaultManager()
 let homeDirectoryPath = NSHomeDirectory()
 let currentDirectoryPath = manager.currentDirectoryPath
 let viperDirectoryPath = homeDirectoryPath.stringByAppendingString("/.viper")
+let configPath = viperDirectoryPath.stringByAppendingString("/viper.conf")
 let templatesDirectoryPath = viperDirectoryPath.stringByAppendingString("/Templates")
 let moduleDirectoryName = moduleType == nil ? "ViewControllerModule" : "\(moduleType!)Module"
 let moduleDirectoryPath = templatesDirectoryPath.stringByAppendingString("/\(moduleDirectoryName)")
@@ -100,6 +101,25 @@ if !manager.fileExistsAtPath(templatesDirectoryPath) {
 if !manager.fileExistsAtPath(moduleDirectoryPath) {
     printError("Error: `~/.viper/Templates/\(moduleDirectoryName)` directory (template) not exist!")
     exit(0)
+}
+
+var config: [String: AnyObject]? = nil
+
+if manager.fileExistsAtPath(configPath) {
+    if let contents = NSData(contentsOfFile: configPath) {
+        if let json = try! NSJSONSerialization.JSONObjectWithData(contents, options: .AllowFragments) as? [String: AnyObject] {
+            config = json["CONFIG"] as? [String: AnyObject]
+        }
+    }
+} else {
+    if let contentns = try? NSJSONSerialization.dataWithJSONObject(Config.defaultConfig, options: .PrettyPrinted) {
+        if manager.createFileAtPath(configPath, contents: contentns, attributes: nil) {
+            print(ANSIColors.green + "viper.conf file created: \(configPath)")
+            print(ANSIColors.def + "")
+        } else {
+            printError("Failed to create viper.conf file! \(configPath)")
+        }
+    }
 }
 
 
@@ -121,10 +141,23 @@ let enumerator = manager.enumeratorAtURL(NSURL(fileURLWithPath: copyPath, isDire
     return true
 })
 
-let data = [
+let now = NSDate()
+let unitFlags: NSCalendarUnit = [.Day, .Month, .Year]
+let components = NSCalendar.currentCalendar().components(unitFlags, fromDate: now)
+
+var data: [String: AnyObject] = [
+    "DATE" : [
+        "dd"    : components.day < 10 ? "0\(components.day)" : String(components.day),
+        "MM"    : components.month < 10 ? "0\(components.month)" : String(components.month),
+        "yy"    : components.year - 2000,
+        "yyyy"  : components.year
+    ],
     "ModuleName" : moduleName,
     "withOutputHandler" : withOutputHandler
 ]
+if let config = config {
+    data["CONFIG"] = config
+}
 
 while let element = enumerator?.nextObject() as? NSURL {
 
