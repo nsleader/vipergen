@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		731B44E41D5498FA00C144A8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B44E31D5498FA00C144A8 /* Config.swift */; };
 		735559301C33DFCC00C8DFF7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7355592F1C33DFCC00C8DFF7 /* main.swift */; };
 		73E90F411D12E3DB00E32853 /* ANSIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E90E2D1D12E3DB00E32853 /* ANSIColors.swift */; };
 		73E90FE71D12E40D00E32853 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E90FC71D12E40D00E32853 /* Box.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		731B44E31D5498FA00C144A8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		7355592C1C33DFCC00C8DFF7 /* vipergen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vipergen; sourceTree = BUILT_PRODUCTS_DIR; };
 		7355592F1C33DFCC00C8DFF7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		73E90E2D1D12E3DB00E32853 /* ANSIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANSIColors.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				73E90E2C1D12E3DB00E32853 /* 3rd */,
 				7355592F1C33DFCC00C8DFF7 /* main.swift */,
+				731B44E31D5498FA00C144A8 /* Config.swift */,
 			);
 			path = vipergen;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				73E90FF51D12E40D00E32853 /* Logger.swift in Sources */,
 				73E90FF21D12E40D00E32853 /* JavascriptEscapeHelper.swift in Sources */,
 				73E910051D12E40D00E32853 /* VariableTag.swift in Sources */,
+				731B44E41D5498FA00C144A8 /* Config.swift in Sources */,
 				73E90FEB1D12E40D00E32853 /* CoreFunctions.swift in Sources */,
 				73E90FF91D12E40D00E32853 /* SectionTag.swift in Sources */,
 				73E90FFB1D12E40D00E32853 /* Tag.swift in Sources */,
