@@ -7,8 +7,6 @@
 //
 
 import Darwin.C
-import Mustache
-
 
 //
 // Parse arguments
@@ -30,10 +28,26 @@ if needHelp {
     exit(0)
 }
 
+print(ANSIColors.green + "ViperGen version 0.4.0", terminator: ANSIColors.def + "\n\n")
+
+//
+// Init
+//
+let templatesService = TemplatesService()
+if commands.index(of: Command.start.rawValue) == 0 {
+    do {
+        try templatesService.createConfigFile()
+        print(ANSIColors.blue + "Configuration file (\(TemplatesService.configFileName)) created in current directory!")
+        print(ANSIColors.def + "")
+    } catch let e as TemplatesError {
+        printError(e.message)
+    }
+    exit(0)
+}
+
 //
 // Fetch templates
 //
-let templatesService = TemplatesService()
 if commands.index(of: Command.fetch.rawValue) == 0 {
     print("Fetching templates")
     do {
@@ -44,8 +58,17 @@ if commands.index(of: Command.fetch.rawValue) == 0 {
     exit(0)
 }
 
+//
+// Check templates
+//
+var templates: [String] = []
+do {
+    templates.append(contentsOf: try templatesService.templates())
+} catch let e as TemplatesError {
+    printError(e.message)
+    exit(0)
+}
 
-print(ANSIColors.green + "ViperGen version 0.4.0\n")
 
 //
 // Module name
@@ -60,19 +83,18 @@ guard let moduleName = readLine()?.capitalized, moduleName.characters.count > 0 
 //
 // Available modules
 //
-var templates: [String] = []
-do {
-    templates.append(contentsOf: try templatesService.templates())
-} catch let e as TemplatesError {
-    printError(e.message)
-    exit(0)
-}
-print(ANSIColors.blue + "\nAvailable templates:", terminator: ANSIColors.def + "\n")
+print(ANSIColors.blue + "\nAvailable templates:", terminator: ANSIColors.def + "\n\n")
 printListOfTemplates(templates)
-print(ANSIColors.blue + "\nType number of template: ", terminator: ANSIColors.def + "")
+print(ANSIColors.blue + "\nType number of template (0 by default): ", terminator: ANSIColors.def + "")
 
-guard let input = readLine(), let templateNumber = Int(input), templateNumber < templates.count else {
-    printError("Incorrect template number!")
+var selectedTemplateNumber = 0
+
+if let input = readLine(), let templateNumber = Int(input) {
+    selectedTemplateNumber = templateNumber
+}
+
+guard selectedTemplateNumber < templates.count else {
+    printError("\nIncorrect template number!")
     exit(0)
 }
 
@@ -87,3 +109,15 @@ if let outputHandlerCommand = readLine(), (outputHandlerCommand.lowercased() == 
 }
 
 
+//
+// Create module
+//
+
+do {
+    let newModulePath = try templatesService.createModule(name: moduleName, templateNumber: selectedTemplateNumber, withOutputHandler: hasOutputHandler)
+    _ = shell("open", newModulePath)
+} catch let e as TemplatesError {
+    printError("\n" + e.message)
+} catch let e {
+    printError(e.localizedDescription)
+}

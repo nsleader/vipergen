@@ -7,89 +7,124 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		735826431DA5272800ED9D46 /* TemplatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735826411DA5271C00ED9D46 /* TemplatesService.swift */; };
 		_LinkFileRef_Mustache_via_vipergen /* Mustache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Mustache" /* Mustache.framework */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Common/Common.swift" /* Common/Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Common/Common.swift" /* Common/Common.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/Expression.swift" /* Compiling/Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/Expression.swift" /* Compiling/Expression.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/LocatedTag.swift" /* Compiling/TemplateAST/LocatedTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/LocatedTag.swift" /* Compiling/TemplateAST/LocatedTag.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/SectionTag.swift" /* Compiling/TemplateAST/SectionTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/SectionTag.swift" /* Compiling/TemplateAST/SectionTag.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/Tag.swift" /* Compiling/TemplateAST/Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/Tag.swift" /* Compiling/TemplateAST/Tag.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/TemplateAST.swift" /* Compiling/TemplateAST/TemplateAST.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/TemplateAST.swift" /* Compiling/TemplateAST/TemplateAST.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/TemplateASTNode.swift" /* Compiling/TemplateAST/TemplateASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/TemplateASTNode.swift" /* Compiling/TemplateAST/TemplateASTNode.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/VariableTag.swift" /* Compiling/TemplateAST/VariableTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/VariableTag.swift" /* Compiling/TemplateAST/VariableTag.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateCompiler.swift" /* Compiling/TemplateCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateCompiler.swift" /* Compiling/TemplateCompiler.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Configuration/Configuration.swift" /* Configuration/Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Configuration/Configuration.swift" /* Configuration/Configuration.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Generation/ExpressionGenerator.swift" /* Generation/ExpressionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Generation/ExpressionGenerator.swift" /* Generation/ExpressionGenerator.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Generation/TemplateGenerator.swift" /* Generation/TemplateGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Generation/TemplateGenerator.swift" /* Generation/TemplateGenerator.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/EachFilter.swift" /* Goodies/EachFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/EachFilter.swift" /* Goodies/EachFilter.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/HTMLEscapeHelper.swift" /* Goodies/HTMLEscapeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/HTMLEscapeHelper.swift" /* Goodies/HTMLEscapeHelper.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/JavascriptEscapeHelper.swift" /* Goodies/JavascriptEscapeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/JavascriptEscapeHelper.swift" /* Goodies/JavascriptEscapeHelper.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/Logger.swift" /* Goodies/Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/Logger.swift" /* Goodies/Logger.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/StandardLibrary.swift" /* Goodies/StandardLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/StandardLibrary.swift" /* Goodies/StandardLibrary.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/ZipFilter.swift" /* Goodies/ZipFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/ZipFilter.swift" /* Goodies/ZipFilter.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/ExpressionParser.swift" /* Parsing/ExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/ExpressionParser.swift" /* Parsing/ExpressionParser.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/TemplateParser.swift" /* Parsing/TemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/TemplateParser.swift" /* Parsing/TemplateParser.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/TemplateToken.swift" /* Parsing/TemplateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/TemplateToken.swift" /* Parsing/TemplateToken.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/Box.swift" /* Rendering/Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/Box.swift" /* Rendering/Box.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/Context.swift" /* Rendering/Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/Context.swift" /* Rendering/Context.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/CoreFunctions.swift" /* Rendering/CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/CoreFunctions.swift" /* Rendering/CoreFunctions.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/ExpressionInvocation.swift" /* Rendering/ExpressionInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/ExpressionInvocation.swift" /* Rendering/ExpressionInvocation.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/MustacheBox.swift" /* Rendering/MustacheBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/MustacheBox.swift" /* Rendering/MustacheBox.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/RenderingEngine.swift" /* Rendering/RenderingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/RenderingEngine.swift" /* Rendering/RenderingEngine.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Template/Template.swift" /* Template/Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Template/Template.swift" /* Template/Template.swift */; };
-		"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Template/TemplateRepository.swift" /* Template/TemplateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Template/TemplateRepository.swift" /* Template/TemplateRepository.swift */; };
+		_LinkFileRef_Yaml_via_vipergen /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Yaml" /* Yaml.framework */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Box.swift" /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Box.swift" /* Box.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Common.swift" /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Common.swift" /* Common.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Configuration.swift" /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Configuration.swift" /* Configuration.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Context.swift" /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Context.swift" /* Context.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/CoreFunctions.swift" /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/CoreFunctions.swift" /* CoreFunctions.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/CoreGraphics.swift" /* CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/CoreGraphics.swift" /* CoreGraphics.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/EachFilter.swift" /* EachFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/EachFilter.swift" /* EachFilter.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Expression.swift" /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Expression.swift" /* Expression.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/ExpressionGenerator.swift" /* ExpressionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/ExpressionGenerator.swift" /* ExpressionGenerator.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/ExpressionInvocation.swift" /* ExpressionInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/ExpressionInvocation.swift" /* ExpressionInvocation.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/ExpressionParser.swift" /* ExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/ExpressionParser.swift" /* ExpressionParser.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Fixit-1.1.0.swift" /* Fixit-1.1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Fixit-1.1.0.swift" /* Fixit-1.1.0.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Formatter.swift" /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Formatter.swift" /* Formatter.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Foundation.swift" /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Foundation.swift" /* Foundation.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/HTMLEscapeHelper.swift" /* HTMLEscapeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/HTMLEscapeHelper.swift" /* HTMLEscapeHelper.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/JavascriptEscapeHelper.swift" /* JavascriptEscapeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/JavascriptEscapeHelper.swift" /* JavascriptEscapeHelper.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Localizer.swift" /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Localizer.swift" /* Localizer.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/LocatedTag.swift" /* LocatedTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/LocatedTag.swift" /* LocatedTag.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Logger.swift" /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Logger.swift" /* Logger.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/MustacheBox.swift" /* MustacheBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/MustacheBox.swift" /* MustacheBox.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/RenderingEngine.swift" /* RenderingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/RenderingEngine.swift" /* RenderingEngine.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/SectionTag.swift" /* SectionTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/SectionTag.swift" /* SectionTag.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/StandardLibrary.swift" /* StandardLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/StandardLibrary.swift" /* StandardLibrary.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/SwiftStandardLibrary.swift" /* SwiftStandardLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/SwiftStandardLibrary.swift" /* SwiftStandardLibrary.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Tag.swift" /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Tag.swift" /* Tag.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Template.swift" /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/Template.swift" /* Template.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateAST.swift" /* TemplateAST.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateAST.swift" /* TemplateAST.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateASTNode.swift" /* TemplateASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateASTNode.swift" /* TemplateASTNode.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateCompiler.swift" /* TemplateCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateCompiler.swift" /* TemplateCompiler.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateGenerator.swift" /* TemplateGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateGenerator.swift" /* TemplateGenerator.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateParser.swift" /* TemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateParser.swift" /* TemplateParser.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateRepository.swift" /* TemplateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateRepository.swift" /* TemplateRepository.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateToken.swift" /* TemplateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateToken.swift" /* TemplateToken.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/URLEscapeHelper.swift" /* URLEscapeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/URLEscapeHelper.swift" /* URLEscapeHelper.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/VariableTag.swift" /* VariableTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/VariableTag.swift" /* VariableTag.swift */; };
+		"__src_cc_ref_Packages/Mustache-2.0.0/Sources/ZipFilter.swift" /* ZipFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Mustache-2.0.0/Sources/ZipFilter.swift" /* ZipFilter.swift */; };
+		"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/YAMLOperators.swift" /* YAMLOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLOperators.swift" /* YAMLOperators.swift */; };
+		"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/YAMLParser.swift" /* YAMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLParser.swift" /* YAMLParser.swift */; };
+		"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/YAMLRegex.swift" /* YAMLRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLRegex.swift" /* YAMLRegex.swift */; };
+		"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/YAMLResult.swift" /* YAMLResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLResult.swift" /* YAMLResult.swift */; };
+		"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/YAMLTokenizer.swift" /* YAMLTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLTokenizer.swift" /* YAMLTokenizer.swift */; };
+		"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/Yaml.swift" /* Yaml.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Yaml-3.0.0/Yaml/Yaml.swift" /* Yaml.swift */; };
 		__src_cc_ref_Sources/ANSIColors.swift /* ANSIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/ANSIColors.swift /* ANSIColors.swift */; };
 		__src_cc_ref_Sources/Helpers.swift /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Helpers.swift /* Helpers.swift */; };
+		__src_cc_ref_Sources/TemplatesService.swift /* TemplatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/TemplatesService.swift /* TemplatesService.swift */; };
 		__src_cc_ref_Sources/main.swift /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/main.swift /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		735826401DA51D7E00ED9D46 /* PBXContainerItemProxy */ = {
+		73DCE6D71DBD072300EC2D0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Mustache";
 			remoteInfo = Mustache;
 		};
+		73DCE6D81DBD072300EC2D0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Yaml";
+			remoteInfo = Yaml;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		735826411DA5271C00ED9D46 /* TemplatesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplatesService.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Common/Common.swift" /* Common/Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common/Common.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/Expression.swift" /* Compiling/Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compiling/Expression.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/LocatedTag.swift" /* Compiling/TemplateAST/LocatedTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compiling/TemplateAST/LocatedTag.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/SectionTag.swift" /* Compiling/TemplateAST/SectionTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compiling/TemplateAST/SectionTag.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/Tag.swift" /* Compiling/TemplateAST/Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compiling/TemplateAST/Tag.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/TemplateAST.swift" /* Compiling/TemplateAST/TemplateAST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compiling/TemplateAST/TemplateAST.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/TemplateASTNode.swift" /* Compiling/TemplateAST/TemplateASTNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compiling/TemplateAST/TemplateASTNode.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/VariableTag.swift" /* Compiling/TemplateAST/VariableTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compiling/TemplateAST/VariableTag.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateCompiler.swift" /* Compiling/TemplateCompiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compiling/TemplateCompiler.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Configuration/Configuration.swift" /* Configuration/Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration/Configuration.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Generation/ExpressionGenerator.swift" /* Generation/ExpressionGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generation/ExpressionGenerator.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Generation/TemplateGenerator.swift" /* Generation/TemplateGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generation/TemplateGenerator.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/EachFilter.swift" /* Goodies/EachFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goodies/EachFilter.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/HTMLEscapeHelper.swift" /* Goodies/HTMLEscapeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goodies/HTMLEscapeHelper.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/JavascriptEscapeHelper.swift" /* Goodies/JavascriptEscapeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goodies/JavascriptEscapeHelper.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/Logger.swift" /* Goodies/Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goodies/Logger.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/StandardLibrary.swift" /* Goodies/StandardLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goodies/StandardLibrary.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/ZipFilter.swift" /* Goodies/ZipFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goodies/ZipFilter.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/ExpressionParser.swift" /* Parsing/ExpressionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing/ExpressionParser.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/TemplateParser.swift" /* Parsing/TemplateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing/TemplateParser.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/TemplateToken.swift" /* Parsing/TemplateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing/TemplateToken.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/Box.swift" /* Rendering/Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rendering/Box.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/Context.swift" /* Rendering/Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rendering/Context.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/CoreFunctions.swift" /* Rendering/CoreFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rendering/CoreFunctions.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/ExpressionInvocation.swift" /* Rendering/ExpressionInvocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rendering/ExpressionInvocation.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/MustacheBox.swift" /* Rendering/MustacheBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rendering/MustacheBox.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/RenderingEngine.swift" /* Rendering/RenderingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rendering/RenderingEngine.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Template/Template.swift" /* Template/Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template/Template.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Template/TemplateRepository.swift" /* Template/TemplateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template/TemplateRepository.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Box.swift" /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Common.swift" /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Configuration.swift" /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Context.swift" /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/CoreFunctions.swift" /* CoreFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreFunctions.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/CoreGraphics.swift" /* CoreGraphics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphics.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/EachFilter.swift" /* EachFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachFilter.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Expression.swift" /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/ExpressionGenerator.swift" /* ExpressionGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionGenerator.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/ExpressionInvocation.swift" /* ExpressionInvocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionInvocation.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/ExpressionParser.swift" /* ExpressionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Fixit-1.1.0.swift" /* Fixit-1.1.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fixit-1.1.0.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Formatter.swift" /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Foundation.swift" /* Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/HTMLEscapeHelper.swift" /* HTMLEscapeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLEscapeHelper.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/JavascriptEscapeHelper.swift" /* JavascriptEscapeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavascriptEscapeHelper.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Localizer.swift" /* Localizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/LocatedTag.swift" /* LocatedTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatedTag.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Logger.swift" /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/MustacheBox.swift" /* MustacheBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustacheBox.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/RenderingEngine.swift" /* RenderingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderingEngine.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/SectionTag.swift" /* SectionTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTag.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/StandardLibrary.swift" /* StandardLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardLibrary.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/SwiftStandardLibrary.swift" /* SwiftStandardLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStandardLibrary.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Tag.swift" /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Template.swift" /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateAST.swift" /* TemplateAST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateAST.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateASTNode.swift" /* TemplateASTNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateASTNode.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateCompiler.swift" /* TemplateCompiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCompiler.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateGenerator.swift" /* TemplateGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateGenerator.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateParser.swift" /* TemplateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateRepository.swift" /* TemplateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateRepository.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateToken.swift" /* TemplateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateToken.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/URLEscapeHelper.swift" /* URLEscapeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEscapeHelper.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/VariableTag.swift" /* VariableTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableTag.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Mustache-2.0.0/Sources/ZipFilter.swift" /* ZipFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipFilter.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLOperators.swift" /* YAMLOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAMLOperators.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLParser.swift" /* YAMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAMLParser.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLRegex.swift" /* YAMLRegex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAMLRegex.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLResult.swift" /* YAMLResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAMLResult.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLTokenizer.swift" /* YAMLTokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAMLTokenizer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/Yaml.swift" /* Yaml.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yaml.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/ANSIColors.swift /* ANSIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANSIColors.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/Helpers.swift /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/TemplatesService.swift /* TemplatesService.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = TemplatesService.swift; sourceTree = "<group>"; tabWidth = 4; };
 		__PBXFileRef_Sources/main.swift /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		__PBXFileRef_vipergen.xcodeproj/Configs/Project.xcconfig /* vipergen.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = vipergen.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		"_____Product_Mustache" /* Mustache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Mustache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_Yaml" /* Yaml.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Yaml.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_vipergen" /* vipergen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = vipergen; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,11 +136,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		"___LinkPhase_Yaml" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		"___LinkPhase_vipergen" /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 				_LinkFileRef_Mustache_via_vipergen /* Mustache.framework in Frameworks */,
+				_LinkFileRef_Yaml_via_vipergen /* Yaml.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				"_______Group_Mustache" /* Mustache */,
+				"_______Group_Yaml" /* Yaml */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
@@ -135,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				"_____Product_Mustache" /* Mustache.framework */,
+				"_____Product_Yaml" /* Yaml.framework */,
 				"_____Product_vipergen" /* vipergen */,
 			);
 			name = Products;
@@ -159,38 +204,59 @@
 		"_______Group_Mustache" /* Mustache */ = {
 			isa = PBXGroup;
 			children = (
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Common/Common.swift" /* Common/Common.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/Expression.swift" /* Compiling/Expression.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateCompiler.swift" /* Compiling/TemplateCompiler.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Configuration/Configuration.swift" /* Configuration/Configuration.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Generation/ExpressionGenerator.swift" /* Generation/ExpressionGenerator.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Generation/TemplateGenerator.swift" /* Generation/TemplateGenerator.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/EachFilter.swift" /* Goodies/EachFilter.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/HTMLEscapeHelper.swift" /* Goodies/HTMLEscapeHelper.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/JavascriptEscapeHelper.swift" /* Goodies/JavascriptEscapeHelper.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/Logger.swift" /* Goodies/Logger.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/StandardLibrary.swift" /* Goodies/StandardLibrary.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/ZipFilter.swift" /* Goodies/ZipFilter.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/ExpressionParser.swift" /* Parsing/ExpressionParser.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/TemplateParser.swift" /* Parsing/TemplateParser.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/TemplateToken.swift" /* Parsing/TemplateToken.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/Box.swift" /* Rendering/Box.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/Context.swift" /* Rendering/Context.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/CoreFunctions.swift" /* Rendering/CoreFunctions.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/ExpressionInvocation.swift" /* Rendering/ExpressionInvocation.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/MustacheBox.swift" /* Rendering/MustacheBox.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/RenderingEngine.swift" /* Rendering/RenderingEngine.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Template/Template.swift" /* Template/Template.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Template/TemplateRepository.swift" /* Template/TemplateRepository.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/LocatedTag.swift" /* Compiling/TemplateAST/LocatedTag.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/SectionTag.swift" /* Compiling/TemplateAST/SectionTag.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/Tag.swift" /* Compiling/TemplateAST/Tag.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/TemplateAST.swift" /* Compiling/TemplateAST/TemplateAST.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/TemplateASTNode.swift" /* Compiling/TemplateAST/TemplateASTNode.swift */,
-				"__PBXFileRef_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/VariableTag.swift" /* Compiling/TemplateAST/VariableTag.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Box.swift" /* Box.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Common.swift" /* Common.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Configuration.swift" /* Configuration.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Context.swift" /* Context.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/CoreFunctions.swift" /* CoreFunctions.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/CoreGraphics.swift" /* CoreGraphics.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/EachFilter.swift" /* EachFilter.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Expression.swift" /* Expression.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/ExpressionGenerator.swift" /* ExpressionGenerator.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/ExpressionInvocation.swift" /* ExpressionInvocation.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/ExpressionParser.swift" /* ExpressionParser.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Fixit-1.1.0.swift" /* Fixit-1.1.0.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Formatter.swift" /* Formatter.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Foundation.swift" /* Foundation.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/HTMLEscapeHelper.swift" /* HTMLEscapeHelper.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/JavascriptEscapeHelper.swift" /* JavascriptEscapeHelper.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Localizer.swift" /* Localizer.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/LocatedTag.swift" /* LocatedTag.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Logger.swift" /* Logger.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/MustacheBox.swift" /* MustacheBox.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/RenderingEngine.swift" /* RenderingEngine.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/SectionTag.swift" /* SectionTag.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/StandardLibrary.swift" /* StandardLibrary.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/SwiftStandardLibrary.swift" /* SwiftStandardLibrary.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Tag.swift" /* Tag.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/Template.swift" /* Template.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateAST.swift" /* TemplateAST.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateASTNode.swift" /* TemplateASTNode.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateCompiler.swift" /* TemplateCompiler.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateGenerator.swift" /* TemplateGenerator.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateParser.swift" /* TemplateParser.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateRepository.swift" /* TemplateRepository.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/TemplateToken.swift" /* TemplateToken.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/URLEscapeHelper.swift" /* URLEscapeHelper.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/VariableTag.swift" /* VariableTag.swift */,
+				"__PBXFileRef_Packages/Mustache-2.0.0/Sources/ZipFilter.swift" /* ZipFilter.swift */,
 			);
 			name = Mustache;
-			path = "Packages/Mustache-1.0.0/Sources/Mustache";
+			path = "Packages/Mustache-2.0.0/Sources";
+			sourceTree = "<group>";
+		};
+		"_______Group_Yaml" /* Yaml */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/Yaml.swift" /* Yaml.swift */,
+				"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLOperators.swift" /* YAMLOperators.swift */,
+				"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLParser.swift" /* YAMLParser.swift */,
+				"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLRegex.swift" /* YAMLRegex.swift */,
+				"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLResult.swift" /* YAMLResult.swift */,
+				"__PBXFileRef_Packages/Yaml-3.0.0/Yaml/YAMLTokenizer.swift" /* YAMLTokenizer.swift */,
+			);
+			name = Yaml;
+			path = "Packages/Yaml-3.0.0/Yaml";
 			sourceTree = "<group>";
 		};
 		"_______Group_vipergen" /* vipergen */ = {
@@ -198,8 +264,8 @@
 			children = (
 				__PBXFileRef_Sources/ANSIColors.swift /* ANSIColors.swift */,
 				__PBXFileRef_Sources/Helpers.swift /* Helpers.swift */,
-				735826411DA5271C00ED9D46 /* TemplatesService.swift */,
 				__PBXFileRef_Sources/main.swift /* main.swift */,
+				__PBXFileRef_Sources/TemplatesService.swift /* TemplatesService.swift */,
 			);
 			name = vipergen;
 			path = Sources;
@@ -224,6 +290,22 @@
 			productReference = "_____Product_Mustache" /* Mustache.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		"______Target_Yaml" /* Yaml */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_Yaml" /* Build configuration list for PBXNativeTarget "Yaml" */;
+			buildPhases = (
+				CompilePhase_Yaml /* Sources */,
+				"___LinkPhase_Yaml" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yaml;
+			productName = Yaml;
+			productReference = "_____Product_Yaml" /* Yaml.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		"______Target_vipergen" /* vipergen */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = "_______Confs_vipergen" /* Build configuration list for PBXNativeTarget "vipergen" */;
@@ -235,6 +317,7 @@
 			);
 			dependencies = (
 				__Dependency_Mustache /* PBXTargetDependency */,
+				__Dependency_Yaml /* PBXTargetDependency */,
 			);
 			name = vipergen;
 			productName = vipergen;
@@ -262,6 +345,7 @@
 			projectRoot = "";
 			targets = (
 				"______Target_Mustache" /* Mustache */,
+				"______Target_Yaml" /* Yaml */,
 				"______Target_vipergen" /* vipergen */,
 			);
 		};
@@ -272,35 +356,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Common/Common.swift" /* Common/Common.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/Expression.swift" /* Compiling/Expression.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateCompiler.swift" /* Compiling/TemplateCompiler.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Configuration/Configuration.swift" /* Configuration/Configuration.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Generation/ExpressionGenerator.swift" /* Generation/ExpressionGenerator.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Generation/TemplateGenerator.swift" /* Generation/TemplateGenerator.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/EachFilter.swift" /* Goodies/EachFilter.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/HTMLEscapeHelper.swift" /* Goodies/HTMLEscapeHelper.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/JavascriptEscapeHelper.swift" /* Goodies/JavascriptEscapeHelper.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/Logger.swift" /* Goodies/Logger.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/StandardLibrary.swift" /* Goodies/StandardLibrary.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Goodies/ZipFilter.swift" /* Goodies/ZipFilter.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/ExpressionParser.swift" /* Parsing/ExpressionParser.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/TemplateParser.swift" /* Parsing/TemplateParser.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Parsing/TemplateToken.swift" /* Parsing/TemplateToken.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/Box.swift" /* Rendering/Box.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/Context.swift" /* Rendering/Context.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/CoreFunctions.swift" /* Rendering/CoreFunctions.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/ExpressionInvocation.swift" /* Rendering/ExpressionInvocation.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/MustacheBox.swift" /* Rendering/MustacheBox.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Rendering/RenderingEngine.swift" /* Rendering/RenderingEngine.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Template/Template.swift" /* Template/Template.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Template/TemplateRepository.swift" /* Template/TemplateRepository.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/LocatedTag.swift" /* Compiling/TemplateAST/LocatedTag.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/SectionTag.swift" /* Compiling/TemplateAST/SectionTag.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/Tag.swift" /* Compiling/TemplateAST/Tag.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/TemplateAST.swift" /* Compiling/TemplateAST/TemplateAST.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/TemplateASTNode.swift" /* Compiling/TemplateAST/TemplateASTNode.swift in Sources */,
-				"__src_cc_ref_Packages/Mustache-1.0.0/Sources/Mustache/Compiling/TemplateAST/VariableTag.swift" /* Compiling/TemplateAST/VariableTag.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Box.swift" /* Box.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Common.swift" /* Common.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Configuration.swift" /* Configuration.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Context.swift" /* Context.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/CoreFunctions.swift" /* CoreFunctions.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/CoreGraphics.swift" /* CoreGraphics.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/EachFilter.swift" /* EachFilter.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Expression.swift" /* Expression.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/ExpressionGenerator.swift" /* ExpressionGenerator.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/ExpressionInvocation.swift" /* ExpressionInvocation.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/ExpressionParser.swift" /* ExpressionParser.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Fixit-1.1.0.swift" /* Fixit-1.1.0.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Formatter.swift" /* Formatter.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Foundation.swift" /* Foundation.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/HTMLEscapeHelper.swift" /* HTMLEscapeHelper.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/JavascriptEscapeHelper.swift" /* JavascriptEscapeHelper.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Localizer.swift" /* Localizer.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/LocatedTag.swift" /* LocatedTag.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Logger.swift" /* Logger.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/MustacheBox.swift" /* MustacheBox.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/RenderingEngine.swift" /* RenderingEngine.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/SectionTag.swift" /* SectionTag.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/StandardLibrary.swift" /* StandardLibrary.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/SwiftStandardLibrary.swift" /* SwiftStandardLibrary.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Tag.swift" /* Tag.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/Template.swift" /* Template.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateAST.swift" /* TemplateAST.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateASTNode.swift" /* TemplateASTNode.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateCompiler.swift" /* TemplateCompiler.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateGenerator.swift" /* TemplateGenerator.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateParser.swift" /* TemplateParser.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateRepository.swift" /* TemplateRepository.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/TemplateToken.swift" /* TemplateToken.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/URLEscapeHelper.swift" /* URLEscapeHelper.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/VariableTag.swift" /* VariableTag.swift in Sources */,
+				"__src_cc_ref_Packages/Mustache-2.0.0/Sources/ZipFilter.swift" /* ZipFilter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_Yaml /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/Yaml.swift" /* Yaml.swift in Sources */,
+				"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/YAMLOperators.swift" /* YAMLOperators.swift in Sources */,
+				"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/YAMLParser.swift" /* YAMLParser.swift in Sources */,
+				"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/YAMLRegex.swift" /* YAMLRegex.swift in Sources */,
+				"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/YAMLResult.swift" /* YAMLResult.swift in Sources */,
+				"__src_cc_ref_Packages/Yaml-3.0.0/Yaml/YAMLTokenizer.swift" /* YAMLTokenizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,10 +412,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				735826431DA5272800ED9D46 /* TemplatesService.swift in Sources */,
 				__src_cc_ref_Sources/ANSIColors.swift /* ANSIColors.swift in Sources */,
 				__src_cc_ref_Sources/Helpers.swift /* Helpers.swift in Sources */,
 				__src_cc_ref_Sources/main.swift /* main.swift in Sources */,
+				__src_cc_ref_Sources/TemplatesService.swift /* TemplatesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +425,12 @@
 		__Dependency_Mustache /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Mustache" /* Mustache */;
-			targetProxy = 735826401DA51D7E00ED9D46 /* PBXContainerItemProxy */;
+			targetProxy = 73DCE6D71DBD072300EC2D0A /* PBXContainerItemProxy */;
+		};
+		__Dependency_Yaml /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Yaml" /* Yaml */;
+			targetProxy = 73DCE6D81DBD072300EC2D0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -336,6 +445,22 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Mustache;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_Yaml /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = vipergen.xcodeproj/Yaml_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Yaml;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_VERSION = 3.0;
@@ -365,6 +490,23 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Mustache;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_Yaml" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = vipergen.xcodeproj/Yaml_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Yaml;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -417,6 +559,15 @@
 			buildConfigurations = (
 				"___DebugConf_Mustache" /* Debug */,
 				_ReleaseConf_Mustache /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_Yaml" /* Build configuration list for PBXNativeTarget "Yaml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_Yaml" /* Debug */,
+				_ReleaseConf_Yaml /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

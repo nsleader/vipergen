@@ -6,8 +6,10 @@
 //
 //
 import Foundation
+import Mustache
 
 enum Command: String {
+    case start = "init"
     case fetch = "fetch"
 }
 
@@ -18,17 +20,11 @@ enum Option: String {
 
 func printHelp() {
     print(ANSIColors.green + "ViperGen version 0.4.0\n")
-    
     print(ANSIColors.udef + "Usage:\n")
-    print(ANSIColors.def + "     $", ANSIColors.green + "vipergen <ModuleName> [<ModuleType>] [--withOutputHandler]\n")
-    print("         ", ANSIColors.green + "ModuleName", ANSIColors.def + "- module name (`Module` is automatically added to the end)")
-    print("         ", ANSIColors.green + "ModuleType", ANSIColors.def + "- module type. Optional. Default `ViewController`")
-    print("         ", ANSIColors.green + "--withOutputHandler -O", ANSIColors.def + "- add a protocol `ModuleOutput`")
-    print("\n")
-    print(ANSIColors.udef + "Example:\n")
-    print(ANSIColors.def + "     $", ANSIColors.green + "vipergen Auth")
-    print(ANSIColors.def + "     $", ANSIColors.green + "vipergen Auth --withOutputHandler")
-    print(ANSIColors.def + "     $", ANSIColors.green + "vipergen Auth ViewController\n")
+    print(ANSIColors.green + "vipergen init", ANSIColors.def + "- creates a config file (vipergen.yml). Run this command on root directory of project.\n")
+    print(ANSIColors.green + "vipergen fetch", ANSIColors.def + "- receives templates and places them in the \(TemplatesService.templatesDir) folder. Run this command immediately after the setting of the configuration file.\n")
+    print(ANSIColors.green + "vipergen", ANSIColors.def + "- create a module and put it in the \(TemplatesService.generatedDir) folder. Run this command on root directory of project.\n")    
+    
     print(ANSIColors.udef + "Structure of the module:\n")
     print(ANSIColors.def + "AuthModule/")
     print("├── AuthModule.swift")

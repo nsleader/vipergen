@@ -22,6 +22,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>______Target_Yaml</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>______Target_vipergen</key>
 		<dict>
 			<key>primary</key>

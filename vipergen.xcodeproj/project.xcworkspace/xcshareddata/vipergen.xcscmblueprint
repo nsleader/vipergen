@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "600FEDA5C5050D457235D155329004A2D7B7D708",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "90092D6FEDF137F7E51822D74D7CF29F4A22729A" : 9223372036854775807,
+    "600FEDA5C5050D457235D155329004A2D7B7D708" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "75CC8971-00C6-4B7E-990F-2C180001A057",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "90092D6FEDF137F7E51822D74D7CF29F4A22729A" : "vipergen\/GeneratedModules\/AaaaModule\/",
+    "600FEDA5C5050D457235D155329004A2D7B7D708" : "vipergen\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "vipergen",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "vipergen.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nsleader\/vipergen.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "600FEDA5C5050D457235D155329004A2D7B7D708"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nsleader\/ViewControllerModule.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "90092D6FEDF137F7E51822D74D7CF29F4A22729A"
+    }
+  ]
+}
